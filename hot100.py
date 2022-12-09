@@ -12,7 +12,7 @@ import datetime
 {peak} = entry.peakPos
 {lastPos} = entry.lastPos
 {plural} = "s" if entry.weeks > 1 else ""
-{delta} = -1*delta
+{delta} = abs(delta)
 '''
 
 chartString = 'The [i]Billboard[/i] Hot 100 chart dated {chartDate} was released on {releaseDate}. This chart tracks United States airplay, sales, and streaming beginning on {startDate} and ending on {endDate}.\n'
